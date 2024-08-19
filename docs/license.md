@@ -1,0 +1,1 @@
+TkEasyGo 使用 [MIT 许可证](https://opensource.org/licenses/MIT)。请查看 [LICENSE 文件](https://github.com//TkEasyGo/blob/main/LICENSE) 以获取详细信息。
