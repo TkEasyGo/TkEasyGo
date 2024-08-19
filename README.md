@@ -9,29 +9,52 @@
 
 ```
 ├── docs
-│   └── docs.md                 # 项目的详细文档，包含库的使用说明和开发指南
+│   ├── contact.md                # 联系信息
+│   ├── contributing.md           # 贡献指南
+│   ├── controls.md               # 控件使用指南
+│   ├── docs.md                   # 项目文档概述
+│   ├── event_binding.md          # 事件绑定的详细说明
+│   ├── faq.md                    # 常见问题解答
+│   ├── getting_started.md        # 快速入门指南
+│   ├── installation.md           # 安装指南
+│   ├── license.md                # 许可证详细信息
+│   ├── README.md                 # 文档首页
+│   ├── styling.md                # 样式和主题设置指南
+│   └── window_operations.md      # 窗口操作指南
 ├── examples
-│   ├── Combobox_app.py          # 示例：展示如何使用下拉框控件（Combobox）
-│   ├── event_app.py             # 示例：演示如何处理事件
-│   ├── label_app.py             # 示例：展示如何使用标签控件（Label）
-│   ├── layout_app.py            # 示例：展示如何使用不同的布局管理功能
-│   ├── notebook_Slider_app.py   # 示例：展示如何使用选项卡控件（Notebook）和滑块控件（Slider）
-│   ├── Progressbar_app.py       # 示例：展示如何使用进度条控件（Progressbar）
-│   ├── tabbed_app.py            # 示例：展示如何使用选项卡（Tabbed）控件
-│   └── test_window.py           # 示例：展示如何创建和操作基本窗口
-├── LICENSE                      # 项目许可证文件，详细信息请参见
-├── README.md                    # 项目说明文件
-├── setup.py                     # 安装脚本，包含库的依赖和安装设置
-├── TkEasyGo
-│   ├── core.py                  # 核心实现文件，定义主要的控件和窗口管理功能
-│   ├── events.py                # 事件处理功能实现
-│   ├── layout.py                # 布局管理功能实现
-│   ├── platform.py              # 平台相关的功能实现
-│   ├── themes.py                # 主题和样式管理功能实现
-│   ├── __init__.py              # 库的初始化文件
-│   └── __pycache__              # 编译的 Python 字节码文件
-│       ├── core.cpython-310.pyc
-│       └── __init__.cpython-310.pyc
+│   ├── Combobox_app.py           # 示例：展示如何使用下拉框控件（Combobox）
+│   ├── event_app.py              # 示例：演示如何处理事件
+│   ├── label_app.py              # 示例：展示如何使用标签控件（Label）
+│   ├── layout_app.py             # 示例：展示如何使用不同的布局管理功能
+│   ├── notebook_Slider_app.py    # 示例：展示如何使用选项卡控件（Notebook）和滑块控件（Slider）
+│   ├── Progressbar_app.py        # 示例：展示如何使用进度条控件（Progressbar）
+│   ├── tabbed_app.py             # 示例：展示如何使用选项卡（Tabbed）控件
+│   └── test_window.py            # 示例：展示如何创建和操作基本窗口
+├── LICENSE                       # 项目许可证文件，详细信息请参见
+├── README.md                     # 项目说明文件
+├── setup.py                      # 安装脚本，包含库的依赖和安装设置
+├── test.ipynb                    # 测试和实验的 Jupyter Notebook 文件
+├── tests
+│   └── test_core.py              # 用于测试核心功能的测试文件
+└── TkEasyGo
+    ├── core.py                   # 核心实现文件，定义主要的控件和窗口管理功能
+    ├── events.py                 # 事件处理功能实现
+    ├── layout.py                 # 布局管理功能实现
+    ├── platform.py               # 平台相关的功能实现
+    ├── simple_variable.py        # 简单的变量管理功能
+    ├── simple_window.py          # 简单窗口的实现，集成各种控件和布局
+    ├── themes.py                 # 主题和样式管理功能实现
+    ├── __init__.py               # 库的初始化文件
+    └── __pycache__               # 编译的 Python 字节码文件
+        ├── core.cpython-310.pyc
+        ├── events.cpython-310.pyc
+        ├── layout.cpython-310.pyc
+        ├── platform.cpython-310.pyc
+        ├── simple_variable.cpython-310.pyc
+        ├── simple_window.cpython-310.pyc
+        ├── themes.cpython-310.pyc
+        └── __init__.cpython-310.pyc
+
 ```
 
 ## 目前支持的功能
