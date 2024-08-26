@@ -7,7 +7,7 @@ def read_long_description(file_path):
 
 setup(
     name="TkEasyGo",
-    version="0.1.0",
+    version="0.2.0",
     packages=find_packages(),
     install_requires=[
         'ttkbootstrap>=1.0.0',  # Bootstrap themes for ttk widgets
