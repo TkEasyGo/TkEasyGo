@@ -1,3 +1,5 @@
+
+
 # 控件介绍
 
 ## 标签 (`Label`)
@@ -20,7 +22,7 @@ window.add_label(text, row, column, columnspan=1)
 ### 示例
 
 ```python
-window.add_label("This is a label", row=0, column=0, columnspan=2)
+window.add_label("这是一个标签", row=0, column=0, columnspan=2)
 ```
 
 ## 按钮 (`Button`)
@@ -44,7 +46,7 @@ window.add_button(text, command, row, column, columnspan=1)
 ### 示例
 
 ```python
-window.add_button("Click Me", lambda: print("Button clicked"), row=1, column=0)
+window.add_button("点击我", lambda: print("按钮被点击"), row=1, column=0)
 ```
 
 ## 文本框 (`Textbox`)
@@ -67,7 +69,7 @@ window.add_textbox(text, row, column, columnspan=1)
 ### 示例
 
 ```python
-textbox = window.add_textbox("Default text", row=2, column=0, columnspan=2)
+textbox = window.add_textbox("默认文本", row=2, column=0, columnspan=2)
 ```
 
 ### 获取和设置值
@@ -81,7 +83,7 @@ textbox = window.add_textbox("Default text", row=2, column=0, columnspan=2)
 - **设置值**: 使用 `set()` 方法设置文本框的值。
   
   ```python
-  textbox.set("New text")
+  textbox.set("新文本")
   ```
 
 ## 复选框 (`Checkbox`)
@@ -105,7 +107,7 @@ window.add_checkbox(text, variable, row, column)
 
 ```python
 checkbox_var = SimpleVariable()
-window.add_checkbox("Check me", checkbox_var, row=3, column=0)
+window.add_checkbox("勾选我", checkbox_var, row=3, column=0)
 ```
 
 ### 获取和设置值
@@ -145,7 +147,7 @@ window.add_radiobutton(text, value, variable, row, column)
 
 ```python
 radiobutton_var = SimpleVariable("1")
-window.add_radiobutton("Option 1", "1", radiobutton_var, row=4, column=0)
+window.add_radiobutton("选项 1", "1", radiobutton_var, row=4, column=0)
 ```
 
 ### 获取和设置值
@@ -181,7 +183,7 @@ window.add_combobox(options, row, column)
 ### 示例
 
 ```python
-combobox = window.add_combobox(["Option 1", "Option 2", "Option 3"], row=5, column=0)
+combobox = window.add_combobox(["选项 1", "选项 2", "选项 3"], row=5, column=0)
 ```
 
 ### 获取和设置值
@@ -195,7 +197,7 @@ combobox = window.add_combobox(["Option 1", "Option 2", "Option 3"], row=5, colu
 - **设置值**: 使用 `set()` 方法设置选中的值（如果下拉框是可编辑的）。
   
   ```python
-  combobox.set("Option 2")
+  combobox.set("选项 2")
   ```
 
 ## 进度条 (`Progressbar`)
@@ -265,9 +267,7 @@ window.add_notebook(tabs, row, column, columnspan=1)
 
 ### 参数
 
-- **
-
-`tabs`**: 一个列表，包含标签页的标题。
+- **`tabs`**: 一个列表，包含标签页的标题。
 - **`row`**: 选项卡所在的行。
 - **`column`**: 选项卡所在的列。
 - **`columnspan`** (可选): 选项卡跨越的列数，默认为 1。
@@ -275,7 +275,7 @@ window.add_notebook(tabs, row, column, columnspan=1)
 ### 示例
 
 ```python
-notebook = window.add_notebook(["Tab 1", "Tab 2"], row=8, column=0, columnspan=2)
+notebook = window.add_notebook(["标签页 1", "标签页 2"], row=8, column=0, columnspan=2)
 ```
 
 ### 使用选项卡
@@ -287,5 +287,123 @@ notebook = window.add_notebook(["Tab 1", "Tab 2"], row=8, column=0, columnspan=2
 selected_tab = notebook.get()
 
 # 设置标签页内容
-notebook.set("Tab 2")
+notebook.set("标签页 2")
 ```
+
+## 窗口分隔条 (`PanedWindow`)
+
+用于创建可调整大小的窗格。可以通过 `add_paned_window` 方法添加。
+
+### 方法签名
+
+```python
+window.add_paned_window(orient, row, column, columnspan=1)
+```
+
+### 参数
+
+- **`orient`**: 分隔条的方向（`horizontal` 或 `vertical`）。
+- **`row`**: 分隔条所在的行。
+- **`column`**: 分隔条所在的列。
+- **`columnspan`** (可选): 分隔条跨越的列数，默认为 1。
+
+### 示例
+
+```python
+paned_window = window.add_paned_window(orient="vertical", row=9, column=0, columnspan=2)
+```
+
+## 滚动条 (`Scrollbar`)
+
+用于在内容超
+
+出视图范围时滚动视图。可以通过 `add_scrollbar` 方法添加。
+
+### 方法签名
+
+```python
+window.add_scrollbar(orient, row, column, columnspan=1)
+```
+
+### 参数
+
+- **`orient`**: 滚动条的方向（`vertical` 或 `horizontal`）。
+- **`row`**: 滚动条所在的行。
+- **`column`**: 滚动条所在的列。
+- **`columnspan`** (可选): 滚动条跨越的列数，默认为 1。
+
+### 示例
+
+```python
+scrollbar = window.add_scrollbar(orient="vertical", row=10, column=0)
+```
+
+## 分隔符 (`Separator`)
+
+用于在控件之间创建视觉上的分隔。可以通过 `add_separator` 方法添加。
+
+### 方法签名
+
+```python
+window.add_separator(orient, row, column, columnspan=1)
+```
+
+### 参数
+
+- **`orient`**: 分隔符的方向（`horizontal` 或 `vertical`）。
+- **`row`**: 分隔符所在的行。
+- **`column`**: 分隔符所在的列。
+- **`columnspan`** (可选): 分隔符跨越的列数，默认为 1。
+
+### 示例
+
+```python
+separator = window.add_separator(orient="horizontal", row=11, column=0, columnspan=2)
+```
+
+## 数字输入框 (`Spinbox`)
+
+允许用户选择一个数值范围内的值。可以通过 `add_spinbox` 方法添加。
+
+### 方法签名
+
+```python
+window.add_spinbox(values, row, column, columnspan=1)
+```
+
+### 参数
+
+- **`values`**: 一个元组，定义了数值范围和步长（例如 `(0, 100, 1)`）。
+- **`row`**: 数字输入框所在的行。
+- **`column`**: 数字输入框所在的列。
+- **`columnspan`** (可选): 数字输入框跨越的列数，默认为 1。
+
+### 示例
+
+```python
+spinbox = window.add_spinbox(values=(0, 100, 1), row=12, column=0)
+```
+
+## 树视图 (`Treeview`)
+
+用于显示层次结构的数据。可以通过 `add_treeview` 方法添加。
+
+### 方法签名
+
+```python
+window.add_treeview(columns, row, column, columnspan=1)
+```
+
+### 参数
+
+- **`columns`**: 一个列表，定义树视图的列。
+- **`row`**: 树视图所在的行。
+- **`column`**: 树视图所在的列。
+- **`columnspan`** (可选): 树视图跨越的列数，默认为 1。
+
+### 示例
+
+```python
+treeview = window.add_treeview(columns=["Column 1", "Column 2"], row=13, column=0, columnspan=2)
+```
+

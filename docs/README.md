@@ -1,4 +1,3 @@
-
 # TkEasyGo 用户文档目录
 
 欢迎使用 TkEasyGo 用户文档！以下是文档的详细目录，帮助你快速找到所需的信息。
@@ -25,6 +24,11 @@
 [滑块 (`Slider`)](controls.md#滑块-slider)  
 [选项卡 (`Notebook`)](controls.md#选项卡-notebook)  
 [帧 (`Frame`)](controls.md#帧-frame)  
+[窗口分隔条 (`PanedWindow`)](controls.md#窗口分隔条-panedwindow)  
+[滚动条 (`Scrollbar`)](controls.md#滚动条-scrollbar)  
+[分隔符 (`Separator`)](controls.md#分隔符-separator)  
+[数字输入框 (`Spinbox`)](controls.md#数字输入框-spinbox)  
+[树视图 (`Treeview`)](controls.md#树视图-treeview)  
 
 详细介绍各种控件的使用方法、参数和示例。
 
@@ -62,3 +66,4 @@
 
 [许可证](license.md)  
 详细说明 TkEasyGo 的使用许可协议和相关条款。
+

@@ -11,8 +11,10 @@ Classes:
 
 from .simple_variable import SimpleVariable
 from .simple_window import SimpleWindow
+from .builder import GUIBuilder
 
 __all__ = [
     'SimpleVariable',
-    'SimpleWindow'
+    'SimpleWindow',
+    'GUIBuilder'
 ]

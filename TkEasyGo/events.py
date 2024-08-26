@@ -1,4 +1,3 @@
-
 class EventHandler:
     """Class to handle various events in the GUI."""
 
@@ -9,7 +8,7 @@ class EventHandler:
         """Bind a single event to the widget."""
         self.widget.bind(event_name, handler)
 
-    def bind_events(self, events):
+    def bind_multiple(self, events):
         """Bind multiple events to the widget."""
         for event_name, handler in events.items():
-            self.widget.bind(event_name, handler)
+            self.bind_event(event_name, handler)

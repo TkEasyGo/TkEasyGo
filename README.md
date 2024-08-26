@@ -3,11 +3,10 @@
 
 **TkEasyGo** 是一个简单的跨平台 GUI 生成器，旨在帮助开发者快速创建基本的图形用户界面。它基于 `tkinter` 实现，并提供了一系列基本控件和功能，使用户能够轻松构建简单的应用界面。
 
+[English](README_EN.md)
+
 ## 文件结构
 
-以下是项目的文件结构及其用途说明：
-
-```
 ├── docs
 │   ├── contact.md                # 联系信息
 │   ├── contributing.md           # 贡献指南
@@ -27,9 +26,14 @@
 │   ├── label_app.py              # 示例：展示如何使用标签控件（Label）
 │   ├── layout_app.py             # 示例：展示如何使用不同的布局管理功能
 │   ├── notebook_Slider_app.py    # 示例：展示如何使用选项卡控件（Notebook）和滑块控件（Slider）
+│   ├── paned_window_test.py      # 示例：展示如何使用 PanedWindow 控件
 │   ├── Progressbar_app.py        # 示例：展示如何使用进度条控件（Progressbar）
+│   ├── scrollbar_test.py         # 示例：展示如何使用滚动条控件（Scrollbar）
+│   ├── separator_test.py         # 示例：展示如何使用分隔符控件（Separator）
+│   ├── spinbox_test.py           # 示例：展示如何使用数字输入框控件（Spinbox）
 │   ├── tabbed_app.py             # 示例：展示如何使用选项卡（Tabbed）控件
-│   └── test_window.py            # 示例：展示如何创建和操作基本窗口
+│   |── treeview_test.py          # 示例：展示如何使用树视图控件（Treeview）
+|   └── test_components.py        # 示例：日历控件、颜色选择器、文件选择器、警告框等
 ├── LICENSE                       # 项目许可证文件，详细信息请参见
 ├── README.md                     # 项目说明文件
 ├── setup.py                      # 安装脚本，包含库的依赖和安装设置
@@ -45,6 +49,7 @@
     ├── simple_window.py          # 简单窗口的实现，集成各种控件和布局
     ├── themes.py                 # 主题和样式管理功能实现
     ├── __init__.py               # 库的初始化文件
+    |── module                    # 模块文件夹
     └── __pycache__               # 编译的 Python 字节码文件
         ├── core.cpython-310.pyc
         ├── events.cpython-310.pyc
@@ -52,10 +57,9 @@
         ├── platform.cpython-310.pyc
         ├── simple_variable.cpython-310.pyc
         ├── simple_window.cpython-310.pyc
-        ├── themes.cpython-310.pyc
-        └── __init__.cpython-310.pyc
+        └── themes.cpython-310.pyc
 
-```
+
 
 ## 目前支持的功能
 
