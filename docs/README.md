@@ -12,23 +12,24 @@
 [创建一个基本的窗口](getting_started.md)  
 提供一个简单的示例，帮助你快速上手 TkEasyGo。
 
+
 ## 3. 控件介绍
 
-[标签 (`Label`)](controls.md#标签-label)  
-[按钮 (`Button`)](controls.md#按钮-button)  
-[文本框 (`Textbox`)](controls.md#文本框-textbox)  
-[复选框 (`Checkbox`)](controls.md#复选框-checkbox)  
-[单选按钮 (`Radiobutton`)](controls.md#单选按钮-radiobutton)  
-[下拉框 (`Combobox`)](controls.md#下拉框-combobox)  
-[进度条 (`Progressbar`)](controls.md#进度条-progressbar)  
-[滑块 (`Slider`)](controls.md#滑块-slider)  
-[选项卡 (`Notebook`)](controls.md#选项卡-notebook)  
-[帧 (`Frame`)](controls.md#帧-frame)  
-[窗口分隔条 (`PanedWindow`)](controls.md#窗口分隔条-panedwindow)  
-[滚动条 (`Scrollbar`)](controls.md#滚动条-scrollbar)  
-[分隔符 (`Separator`)](controls.md#分隔符-separator)  
-[数字输入框 (`Spinbox`)](controls.md#数字输入框-spinbox)  
-[树视图 (`Treeview`)](controls.md#树视图-treeview)  
+- [标签 (`Label`)](controls.md#标签-label)
+- [按钮 (`Button`)](controls.md#按钮-button)
+- [文本框 (`Textbox`)](controls.md#文本框-textbox)
+- [复选框 (`Checkbox`)](controls.md#复选框-checkbox)
+- [单选按钮 (`Radiobutton`)](controls.md#单选按钮-radiobutton)
+- [下拉框 (`Combobox`)](controls.md#下拉框-combobox)
+- [进度条 (`Progressbar`)](controls.md#进度条-progressbar)
+- [滑块 (`Slider`)](controls.md#滑块-slider)
+- [选项卡 (`Notebook`)](controls.md#选项卡-notebook)
+- [帧 (`Frame`)](controls.md#帧-frame)
+- [窗口分隔条 (`PanedWindow`)](controls.md#窗口分隔条-panedwindow)
+- [滚动条 (`Scrollbar`)](controls.md#滚动条-scrollbar)
+- [分隔符 (`Separator`)](controls.md#分隔符-separator)
+- [数字输入框 (`Spinbox`)](controls.md#数字输入框-spinbox)
+- [树视图 (`Treeview`)](controls.md#树视图-treeview)
 
 详细介绍各种控件的使用方法、参数和示例。
 

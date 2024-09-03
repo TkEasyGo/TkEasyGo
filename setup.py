@@ -7,7 +7,7 @@ def read_long_description(file_path):
 
 setup(
     name="TkEasyGo",
-    version="0.2.0",
+    version="0.3.0",
     packages=find_packages(),
     install_requires=[
         'ttkbootstrap>=1.0.0',  # Bootstrap themes for ttk widgets
@@ -34,4 +34,9 @@ setup(
         'Environment :: Console',
     ],
     python_requires='>=3.7',
+    entry_points={
+        'console_scripts': [
+            'TkEasyGo=build:run',  # This will map the `TkEasyGo` command to the `run` function in `build.py`
+        ],
+    },
 )
