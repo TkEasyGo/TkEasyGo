@@ -6,7 +6,7 @@
 [English](README_EN.md)
 
 ## 文件结构
-
+```
 ├── docs
 │   ├── contact.md                # 联系信息
 │   ├── contributing.md           # 贡献指南
@@ -59,7 +59,7 @@
         ├── simple_window.cpython-310.pyc
         └── themes.cpython-310.pyc
 
-
+```
 
 ## 目前支持的功能
 

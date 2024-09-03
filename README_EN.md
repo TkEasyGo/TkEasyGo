@@ -6,7 +6,7 @@
 [中文版](README.md)
 
 ## File Structure
-
+```
 ├── docs
 │   ├── contact.md                # Contact Information
 │   ├── contributing.md           # Contribution Guidelines
@@ -58,7 +58,7 @@
         ├── simple_variable.cpython-310.pyc
         ├── simple_window.cpython-310.pyc
         └── themes.cpython-310.pyc
-
+```
 
 ## Supported Features
 
